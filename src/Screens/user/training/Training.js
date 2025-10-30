@@ -4,11 +4,11 @@ import { Col, Row } from "react-bootstrap";
 const Training = () => {
   return (
 <>
-     {/* <div>
+      <div>
       <Row style={{height:350}}>
         <Col className="bg-success d-flex justify-content-center align-items-center " lg={4} sm={12} >
           <h3>My store</h3>
-          <p className="mt-3">This is first item</p>
+          <p className="mt-3">This is 1st item</p>
         </Col>
       
         <Col className="bg-secondary position-relative" lg={4} sm={12} >
@@ -22,7 +22,7 @@ const Training = () => {
           <p>This is third item</p>
         </Col> 
       </Row>
-  </div> */}
+  </div> 
  {/* <div className="bg-info" style={{height:350 , overflowX:"auto"}}>
 
  </div>  */}
