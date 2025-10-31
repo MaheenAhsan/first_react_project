@@ -5,6 +5,7 @@ const Training = () => {
   return (
 <>
       <div>
+        <h1>my Navbar</h1>
       <Row style={{height:350}}>
         <Col className="bg-success d-flex justify-content-center align-items-center " lg={4} sm={12} >
           <h3>My store</h3>
