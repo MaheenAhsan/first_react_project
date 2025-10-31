@@ -10,7 +10,7 @@ import { Navbar, Container } from "react-bootstrap"
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
         </Container>
       </Navbar>
-      <h1>HEADING one</h1>
+      <h1>my navbar heading</h1>
 </>
    )
 }
