@@ -1,15 +1,60 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 const Training = () => {
-  return (
-<>
-      <div>
-        <h1>my Navbar</h1>
+
+    const [fullName , setfullName] = useState("");
+    const [email , setEmail] = useState("");
+    const [password , setPasssword] = useState("");
+
+    return(
+   <>
+  
+   <Container style={{ height: "100vh" }}>
+    <Row>
+    <Col style={{ height: "100vh"}} className=" bg-info d-flex justify-content-center align-items-center" lg={12} sm={12}>
+    <div style={{ width: "40%" }}>
+           
+        <h1>STUDENT LOGIN FORM</h1> 
+          
+         <div className="form-group mt-3">
+            <label>ENTER YOUR FULLNAME</label>
+            <input value={fullName}onChange={(event)=>{
+            setfullName(event.target.value);
+            }} className="form-control" type="text" />
+        </div>
+
+         <div className="form-group mt-3">
+            <label>ENTER YOUR EMAIL</label>
+            <input value={email}onChange={(event)=>{
+                setEmail(event.target.value);
+            }} className="form-control" type="email"/>
+        </div> 
+
+         <div className="form-group mt-3">
+            <label>ENTER YOUR PASSWORD</label>
+             <input value={password} onChange={(event) => {
+                setPasssword(event.target.value)
+            }} className="form-control" type="password" />
+         </div>
+
+            <div className=" form-group mt-5">
+                <Button onClick={()=>{
+                console.log(fullName);
+                console.log(email);
+                console.log(password);
+                }} style={{ width: "100%" }} variant="btn btn-primary">LOGIN</Button>
+            </div>
+             
+    </div>
+    </Col>
+    </Row>
+  </Container>
+     {/* <div>
       <Row style={{height:350}}>
         <Col className="bg-success d-flex justify-content-center align-items-center " lg={4} sm={12} >
           <h3>My store</h3>
-          <p className="mt-3">This is 1st item</p>
+          <p className="mt-3">This is first item</p>
         </Col>
       
         <Col className="bg-secondary position-relative" lg={4} sm={12} >
@@ -23,7 +68,7 @@ const Training = () => {
           <p>This is third item</p>
         </Col> 
       </Row>
-  </div> 
+  </div> */}
  {/* <div className="bg-info" style={{height:350 , overflowX:"auto"}}>
 
  </div>  */}
@@ -62,9 +107,8 @@ const Training = () => {
         </Row>  */}
 
 
-</>
 
-   
+</>
   );
 };
 

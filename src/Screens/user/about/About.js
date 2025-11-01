@@ -1,20 +1,15 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import React from "react";
+import { Container, Nav, Navbar , NavDropdown } from "react-bootstrap";
+import NavbarComponent from "../../../assest/components/user/navbarComponent/NavbarComponent";
+
 
 const About = () => {
-  // useState hook goes here (outside return)
-  const [age, setAge] = useState(10);
-
-  //  function to handle state change
-  const handleClick = () => {
-    setAge(20);
-  };
-
-  return (
-    
-      <Button onClick={handleClick}>{age}</Button>
-    
-  );
-};
+  return(
+   <>
+       <NavbarComponent />
+      </>
+)
+  
+}
 
 export default About;
